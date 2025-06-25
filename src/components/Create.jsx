@@ -19,11 +19,10 @@ const Create = () => {
             </motion.div>
         </div>
 
-        <div className='hidden md:block'>
+        <div className='hidden md:block overflow-hidden'>
             <motion.div
             initial={{opacity:0, x:100}}
             whileInView={{opacity:1, x:0}}
-            className='overflow-hidden'
             transition={{duration:2, ease:easeInOut}}
             viewport={{once:false}}
             >
@@ -43,7 +42,7 @@ const Create = () => {
             </motion.div>
         </div>
         
-        <div className='block md:hidden -mt-7'>
+        <div className='block md:hidden overflow-hidden -mt-7'>
             <motion.div
             initial={{opacity:0, x:100}}
             whileInView={{opacity:1, x:0}}

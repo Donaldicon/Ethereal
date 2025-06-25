@@ -63,11 +63,11 @@ const Hero = () => {
             </div>
 
             <div className='absolute left-[7%] top-[2%]'>
-                <img src={horizontalLine} alt="" className='w-1/2 h-[430px]'/>
+                <img src={horizontalLine} alt="" className='w-1/2 h-[380px]'/>
             </div>
 
             <div className='absolute right-[7.2%] top-[2%]'>
-                <img src={horizontalLine} alt="" className='w-1/2 h-[430px]'/>
+                <img src={horizontalLine} alt="" className='w-1/2 h-[380px]'/>
             </div>
 
             <div className='w-[4px] h-[4px] rounded-full bg-gray-400 absolute top-[33px] left-[6.65%]'/>
