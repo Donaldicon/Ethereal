@@ -40,6 +40,7 @@ const Email = () => {
             onFocus={()=> {setIsActive(true)}}
             onBlur={() => {setIsActive(false)}}
           />
+           <div />
 
             <input type="email" placeholder='Enter your email' required 
                   className={`absolute top-0 h-12 xl:h-16 outline-none rounded-full pl-4 shadow-sm placeholder:text-[16px] 
