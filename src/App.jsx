@@ -7,7 +7,6 @@ import Create from './components/Create'
 import GetInTouch from './components/GetInTouch'
 import Footer from './components/Footer'
 
-import Test from './components/Test'
 
 const App = () => {
   return (

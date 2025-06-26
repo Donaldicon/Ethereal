@@ -9,6 +9,10 @@ import { easeInOut, motion } from 'framer-motion'
 import logo from '../assets/logo/ethereal-logo.png'
 
 const GetInTouch = () => {
+    const facebookLink = 'https://web.facebook.com/profile.php?id=61576418447457';
+    const instagramLink = 'https://www.instagram.com/officialetherealng/';
+    const twitterLink = 'https://x.com/Off_Ethereal';
+    const redditLink = 'https://www.reddit.com/user/Officialethereal/';
   return (
     <div className='overflow-hidden ' id='contact'>
     <motion.div
@@ -29,10 +33,10 @@ const GetInTouch = () => {
             </div>
 
             <div className='grid grid-cols-3 w-[65%] gap-y-4 font-barlow md:text-[16px] lg:text-[20px] xl:text-[24px] mt-5 text-[#808080]'>
-                <Link className='underline'>Facebook</Link>
-                <Link className='underline'>Instagram</Link>
-                <Link className='underline'>Twitter(X)</Link>
-                <Link className='underline'>Reddit</Link>
+                <Link to={facebookLink} target='_blank'  className='underline'>Facebook</Link>
+                <Link to={instagramLink} target='_blank'   className='underline'>Instagram</Link>
+                <Link to={twitterLink} target='_blank'   className='underline'>Twitter(X)</Link>
+                <Link to={redditLink} target='_blank'    className='underline'>Reddit</Link>
             </div>
         </div>
 

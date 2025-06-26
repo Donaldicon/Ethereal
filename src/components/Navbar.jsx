@@ -104,7 +104,31 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll)
     }
   }, [])
+
   
+  const[hotelEmail, setHotelEmail] = useState("")
+  const [hotelError, setHotelError] = useState("")
+  
+  const handleHotelEmailChange = (e) => {
+    setHotelEmail(e.target.value)
+  }
+
+  const handleHotelEmailSubmission = (event) => {
+    event.preventDefault();
+
+    const hotelEmailRegex = /^[^\s@]+@[^\s@]+\.(com|net|org)$/
+
+    if (hotelEmail.length===0) {
+      setHotelError("Enter valid Hotel Email Address")
+    } else if (!hotelEmail.match(hotelEmailRegex)) {
+      setHotelError("Email should be in the form of .com, .org or .net")
+    } else{
+      setHotelError("")
+      alert(`${hotelEmail} has been added`)
+      setHotelEmail("");
+    }
+  }
+
   return (
     <div
     id='navbar'>
@@ -208,12 +232,22 @@ const Navbar = () => {
 
                 <p className='font-barlow text-[#DADBDD] text-center text-[11px] md:text-[12px] xl:text-[14px] my-1'>OR</p>
 
+                <form onSubmit={handleHotelEmailSubmission}>
                 <div className='relative flex items-center justify-center w-[90%] md:w-[60%] max-w-[500px] mx-auto'>
-                  <input type="text" placeholder="Enter your hotel's email address" className='text-[#C5C5C5] placeholder:text-[#C5C5C5] text-[10px] placeholder:text-[10px] md:text-[12px] md:placeholder:text-[12px] xl:text-[14px] xl:placeholder:text-[14px] outline-none  py-4 pl-2 w-full bg-[#F5F6F7] pr-[90px] md:pr-[105px] font-poppins placeholder:font-poppins'/>
+                  <input type="text" placeholder="Enter your hotel's email address" 
+                  required
+                  value={hotelEmail}
+                  className='text-[#C5C5C5] placeholder:text-[#C5C5C5] text-[10px] placeholder:text-[10px] md:text-[12px] md:placeholder:text-[12px] xl:text-[14px] xl:placeholder:text-[14px] outline-none  py-4 pl-2 w-full bg-[#F5F6F7] pr-[90px] md:pr-[105px] font-poppins placeholder:font-poppins' 
+                  onChange={handleHotelEmailChange}
+                  />
                   <div className='absolute right-2'>
-                    <button className='font-barlow text-[12px] md:text-[15px] text-white bg-[#2FCC93] py-2 px-2'>Get Started</button>
+                    <button className='font-barlow text-[12px] md:text-[15px] text-white bg-[#2FCC93] py-2 px-2' type='submit'>Get Started</button>
                   </div>
                 </div>
+                {hotelError && (
+                  <p className='text-red-500 text-[8px] text-center mt-1'>{hotelError}</p>
+                )}
+                </form>
 
                 <div className='flex items-center justify-center mt-8 mb-5'>
                   <img src={lineTwo} alt="" className='w-[35%]'/>
