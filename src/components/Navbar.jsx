@@ -260,7 +260,7 @@ const Navbar = () => {
                     <div key={index} className='bg-[#F0F1F3]  md:mb-3 text-[12px] md:text-[14px] text-[#808080] xl:text-[16px] px-2 md:px-5 py-3 md:py-4 xl:py-5'>
                     <div className='flex items-center justify-between'>
                     <p className='text-[#363636]'>  {section.title}</p>
-                      <FontAwesomeIcon icon={faChevronUp} className={`transition-all duration-300  ${openIndex === index ? 'rotate-180' : 'rotate-0'}`} onClick={() => toggleWindow(index)}/>
+                      <FontAwesomeIcon icon={faChevronUp} className={`text-[#363636] transition-all duration-300  ${openIndex === index ? 'rotate-180' : 'rotate-0'}`} onClick={() => toggleWindow(index)}/>
                     </div>
                     {openIndex === index && (
                       <div className='mt-2 md:mt-4 text-[10px] md:text-[12px] xl:text-[14px] w-[95%] font-poppins'>
