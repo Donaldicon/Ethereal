@@ -6,7 +6,7 @@ import horizontalLine from "../assets/hero/horizontal-line.png";
 import verticalLine from "../assets/hero/vertical-line.png";
 import heroPhone from "../assets/hero/hero-phones.png";
 
-import { easeInOut } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 
 const Hero = () => {
   return (
