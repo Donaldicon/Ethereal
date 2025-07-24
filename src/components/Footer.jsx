@@ -168,7 +168,7 @@ const Footer = () => {
                   placeholder="Your Email Address"
                   value={entryEmail}
                   required
-                  className="font-barlow placeholder:font-barlow text-[12px] placeholder:text-[12px] w-full text-[#AAABAD] pl-3 outline-none py-3 pr-[135px]"
+                  className="font-barlow placeholder:font-barlow text-[12px] placeholder:text-[12px] w-full text-[#AAABAD] pl-3 outline-none py-3 pr-[125px]"
                   onChange={(e) => setEntryEmail(e.target.value)}
                 />
                 <div className="absolute right-2 top-1/2 -translate-y-1/2">
@@ -176,7 +176,7 @@ const Footer = () => {
                     className="bg-[#2FCC93] text-[12px] text-white py-2 px-3 transition-all duration-700 ease-in-out hover:text-[#2fcc93]  hover:bg-white"
                     type="submit"
                   >
-                    {isPending ? "Loading..." : "Newsletter"}
+                    {isPending ? "Loading..." : "Get Newsletter"}
                   </button>
                 </div>
               </div>
