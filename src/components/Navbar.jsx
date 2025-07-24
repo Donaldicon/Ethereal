@@ -20,6 +20,8 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
 
+  const link = 'https://docs.google.com/forms/d/1YEpd41kVzNZT6Y9mBn5nXbA1bYXQMxgBmgpX1Z_Tjg8/viewform?edit_requested=true'
+
   const openModal = (modalData) => {
     setIsModalOpen(true);
     setModalContent(modalData);
@@ -291,7 +293,7 @@ const Navbar = () => {
             </p>
 
             <div className="flex justify-center mt-3 md:mt-4">
-              <Link className="text-[#2FCC93] text-[12px] md:text-[14px] xl:text-[16px] font-barlow font-medium">
+              <Link to={link} className="text-[#2FCC93] text-[12px] md:text-[14px] xl:text-[16px] font-barlow font-medium">
                 Click here to Access the Onboarding form
               </Link>
             </div>

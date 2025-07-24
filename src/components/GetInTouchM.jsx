@@ -36,11 +36,11 @@ const GetInTouch = () => {
                 className="shadow-lg rounded-full w-[5%]"
               />
               <Link
-                to="mailto:ethereal@gmail.com"
+                to="mailto:officialetherealng@gmail.com"
                 target="_blank"
                 className="text-[15px] font-poppins text-[#191919]"
               >
-                ethereal@gmail.com
+                officialetherealng@gmail.com
               </Link>
             </div>
 

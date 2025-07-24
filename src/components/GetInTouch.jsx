@@ -29,7 +29,7 @@ const GetInTouch = () => {
 
             <div className='mt-5 flex items-center space-x-2'>
                 <img src={logo} alt="" className='shadow-lg rounded-full w-[5%]'/>
-                <Link to="mailto:ethereal@gmail.com" target='_blank' className='md:text-[12px] lg:text-[14px] xl:text-[16px] font-poppins text-[#191919]'>ethereal@gmail.com</Link>
+                <Link to="mailto:officialetherealng@gmail.com" target='_blank' className='md:text-[12px] lg:text-[14px] xl:text-[16px] font-poppins text-[#191919]'>officialetherealng@gmail.com</Link>
             </div>
 
             <div className='grid grid-cols-3 w-[65%] gap-y-4 font-barlow md:text-[16px] lg:text-[20px] xl:text-[24px] mt-5 text-[#808080]'>

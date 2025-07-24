@@ -33,7 +33,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <section>
-      <div className="mt-10 bg-[#000000] text-[#5B5B5B] font-poppins px-[2%] py-[3%] rounded-3xl overflow-visible hidden md:block">
+      <div className="mt-10 bg-[#000000] text-[#747474] font-poppins px-[2%] py-[3%] rounded-3xl overflow-visible hidden md:block">
         <div className="flex items-center justify-between w-full">
           <div className="flex flex-col w-[50%]">
             <div className="flex items-center space-x-2 xl:space-x-3">
@@ -75,12 +75,12 @@ const Footer = () => {
               </div>
             </form>
 
-            <p className="font-barlow mt-3 text-[#363636] md:text-[11px] lg:text-[13px] xl:text-[15px] ">
+            <p className="font-barlow mt-3 text-[#747474] md:text-[11px] lg:text-[13px] xl:text-[15px] ">
               Copyright © {currentYear} Ethereal. All rights reserved.
             </p>
           </div>
 
-          <div className="space-y-[30%] text-[#5B5B5B] md:text-[13px] lg:text-[15px] xl:text-[18px] flex flex-col items-end">
+          <div className="space-y-[30%] text-[#747474] md:text-[13px] lg:text-[15px] xl:text-[18px] flex flex-col items-end">
             <div className="overflow-hidden">
               <motion.div
                 initial={{ x: -20, opacity: 0 }}
@@ -133,14 +133,14 @@ const Footer = () => {
 
         <div className="bg-[#848586] h-[1px] w-full mt-4 xl:mt-6" />
 
-        <div className="mt-2 md:text-[11px] lg:text-[13px] xl:text-[15px] text-[#363636] font-barlow flex items-center justify-center space-x-4">
+        <div className="mt-2 md:text-[11px] lg:text-[13px] xl:text-[15px] text-[#747474] font-barlow flex items-center justify-center space-x-4">
           <p>Terms&Conditions</p>
           <p>Privacy Policy</p>
         </div>
       </div>
 
       {/* Mobile View */}
-      <div className="mt-10 bg-[#000000] text-[#5B5B5B] font-poppins py-5 rounded-3xl block md:hidden px-[5%]">
+      <div className="mt-10 bg-[#000000] text-[#747474] font-poppins py-5 rounded-3xl block md:hidden px-[5%]">
         <div className="flex flex-col w-full">
           <div className="flex flex-col">
             <div className="flex items-center space-x-2 ">
@@ -182,12 +182,12 @@ const Footer = () => {
               </div>
             </form>
 
-            <p className="font-barlow mt-1 text-[#363636] text-[11px]  ">
+            <p className="font-barlow mt-1 text-[#747474] text-[11px]  ">
               Copyright © {currentYear} Ethereal. All rights reserved.
             </p>
           </div>
 
-          <div className="space-y-5 mt-7 text-[#5B5B5B] text-[15px]  flex flex-col items-start">
+          <div className="space-y-5 mt-7 text-[#747474] text-[15px]  flex flex-col items-start">
             <div className="overflow-hidden">
               <motion.div
                 initial={{ x: 20, opacity: 0 }}
@@ -240,7 +240,7 @@ const Footer = () => {
 
         <div className="bg-[#848586] h-[1px] w-full mt-4 xl:mt-6" />
 
-        <div className="mt-2 text-[11px]  text-[#363636] font-barlow flex items-center justify-center space-x-4">
+        <div className="mt-2 text-[11px]  text-[#747474] font-barlow flex items-center justify-center space-x-4">
           <p>Terms&Conditions</p>
           <p>Privacy Policy</p>
         </div>
