@@ -19,7 +19,7 @@ const GetInTouch = () => {
     initial={{opacity:0, y:100}}
     whileInView={{opacity:1, y:0}}
     transition={{duration:2, ease:easeInOut}}
-    viewport={{once:false}}
+    viewport={{once:true}}
     >
     <div className='hidden md:flex items-center mt-6 xl:mt-20 bg-[#FAFBFB] px-[5%]' >
         <div className='w-[60%] flex flex-col pl-[2%]'>

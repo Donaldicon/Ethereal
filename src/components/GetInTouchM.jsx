@@ -16,7 +16,7 @@ const GetInTouch = () => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, ease: easeInOut }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
       >
         <div className="md:hidden flex items-center justify-between mt-10 bg-[#FAFBFB]">
           <div className="w-full flex flex-col px-[5%]">

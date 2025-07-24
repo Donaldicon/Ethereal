@@ -61,7 +61,7 @@ const Footer = () => {
                   value={entryEmail}
                   required
                   placeholder="Your Email Address"
-                  className="font-barlow placeholder:font-barlow md:text-[11px] lg:text-[13px] xl:text-[15px] placeholder:md:text-[11px] placeholder:lg:text-[13px] placeholder:xl:text-[15px] w-full text-[#AAABAD] pl-3 outline-none py-3 xl:py-4 pr-[120px] lg:pr-[135px]"
+                  className="font-barlow placeholder:font-barlow md:text-[11px] lg:text-[13px] xl:text-[15px] placeholder:md:text-[11px] placeholder:lg:text-[13px] placeholder:xl:text-[15px] w-full text-[#AAABAD] pl-3 outline-none py-3 xl:py-4 pr-[110px] lg:pr-[125px]"
                   onChange={(e) => setEntryEmail(e.target.value)}
                 />
                 <div className="absolute right-2 top-1/2 -translate-y-1/2">
@@ -69,7 +69,7 @@ const Footer = () => {
                     className="bg-[#2FCC93] md:text-[10px] lg:text-[12px] xl:text-[12px] text-white py-2 px-3 transition-all duration-700 ease-in-out hover:text-[#2fcc93]  hover:bg-white"
                     type="submit"
                   >
-                    {isPending ? "Loading..." : "Newsletter"}
+                    {isPending ? "Loading..." : "Get Newsletter"}
                   </button>
                 </div>
               </div>
@@ -86,7 +86,7 @@ const Footer = () => {
                 initial={{ x: -20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: easeInOut }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center space-x-3 cursor-pointer">
                   <HashLink smooth to="#whyus">
@@ -102,7 +102,7 @@ const Footer = () => {
                 initial={{ x: -70, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: easeInOut }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center space-x-3 cursor-pointer">
                   <HashLink smooth to="#waitlist">
@@ -118,7 +118,7 @@ const Footer = () => {
                 initial={{ x: -90, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: easeInOut }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center space-x-3 cursor-pointer">
                   <HashLink smooth to="#contact">
@@ -193,7 +193,7 @@ const Footer = () => {
                 initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: easeInOut }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center space-x-3 cursor-pointer">
                   <HashLink smooth to="#whyus">
@@ -209,7 +209,7 @@ const Footer = () => {
                 initial={{ x: 70, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: easeInOut }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center space-x-3 cursor-pointer">
                   <HashLink smooth to="#waitlist">
@@ -225,7 +225,7 @@ const Footer = () => {
                 initial={{ x: 90, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 2, ease: easeInOut }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <div className="flex items-center space-x-3 cursor-pointer">
                   <HashLink smooth to="#contact-M">

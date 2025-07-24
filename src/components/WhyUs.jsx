@@ -54,7 +54,7 @@ const WhyUs = () => {
                 initial= {{opacity:0, x:-100}}
                 whileInView={{opacity:1, x:0}}
                 transition={{duration:2, ease:easeInOut}}
-                viewport={{once:false}}>
+                viewport={{once:true}}>
                     <img src={frame1} alt="" className='w-full rounded-2xl'/>
                 </motion.div>
 
@@ -63,7 +63,7 @@ const WhyUs = () => {
                 initial= {{opacity:0, x:100}}
                 whileInView={{opacity:1, x:0}}
                 transition={{duration:2, ease:easeInOut}}
-                viewport={{once:false}}
+                viewport={{once:true}}
                 className=''>
                     <img src={frame2} alt="" className='w-full rounded-2xl'/>
                 </motion.div>
@@ -75,7 +75,7 @@ const WhyUs = () => {
                     initial= {{opacity:0, y:70}}
                     whileInView={{opacity:1, y:0}}
                     transition={{duration:2, ease:easeInOut}}
-                    viewport={{once:false}}>
+                    viewport={{once:true}}>
                     <img src={frame3} alt="" className='mt-7 rounded-2xl'/>
                 </motion.div>
             </div>

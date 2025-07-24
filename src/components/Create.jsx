@@ -17,6 +17,7 @@ const Create = () => {
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: easeInOut }}
+          viewport={{once:true}}
         >
           <img src={createImage} alt="" className=" md:w-full" />
         </motion.div>
@@ -27,16 +28,16 @@ const Create = () => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: easeInOut }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <div className="pl-0 md:-pl-50 xl:-pl-[205px] flex justify-center items-center md:items-start flex-col ">
             <img src={Logo} alt="" className="shadow-xl rounded-full w-[15%]" />
 
-            <p className="text-[#0FA875] font-voltaire text-[25px] md:text-[37px] lg:text-[45px] xl:text-[55px] mt-1">
+            <p className="text-[#0FA875] font-voltaire text-[25px] md:text-[37px] lg:text-[45px] xl:text-[55px] mt-1 leading-[40px] xl:leading-[60px] ">
               One App.
             </p>
 
-            <p className="text-[#363636] text-[25px] md:text-[37px] lg:text-[45px] xl:text-[55px] font-barlow font-semibold ">
+            <p className="text-[#363636] text-[25px] md:text-[37px] lg:text-[45px] xl:text-[55px] font-barlow font-semibold leading-[40px] xl:leading-[60px]">
               Less Stress.
             </p>
 
@@ -56,7 +57,7 @@ const Create = () => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 2, ease: easeInOut }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           <div className="pl-0 flex justify-center items-center md:items-start flex-col ">
             <img src={Logo} alt="" className="shadow-xl rounded-full w-[20%]" />
