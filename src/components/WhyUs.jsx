@@ -44,8 +44,8 @@ const WhyUs = () => {
     
   return (
     <div className='bg-black text-white rounded-3xl flex flex-col items-center justify-center font-barlow py-[4%] px-[3%] z-[1]' id='whyus'>
-        <p className='font-poppins text-[10px] xl:text-[12px] text-[#5B5B5B]'>Why us</p>
-        <p className='text-[25px] md:text-[37px] lg:text-[45px] xl:text-[55px]'>Why <span className='font-voltaire text-[#34E0A1] '>Ethereal</span> is Different</p>
+        <p className='font-poppins text-[12px] xl:text-[16px] text-[#5B5B5B]'>Why us</p>
+        <p className='text-[25px] md:text-[37px] leading-[30px] md:leading-[40px] lg:leading-[50px] xl:leading-[60px] lg:text-[45px] xl:text-[55px] font-bold'>Why <span className='font-voltaire text-[#34E0A1] font-normal'>Ethereal</span> is Different</p>
         <p className='text-[#808080] text-[10px] md:text-[14px] lg:text-[16px] xl:text-[18px] font-poppins'>Ethereal shows you all available hotels within your current radius.</p>
 
         <div className='mt-10 hidden md:block'>

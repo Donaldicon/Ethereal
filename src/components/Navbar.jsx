@@ -154,18 +154,18 @@ const Navbar = () => {
         </HashLink>
 
         {/* Navigation options */}
-        <div className="flex items-center justify-between space-x-7 text-white text-opacity-60 font-barlow md:text-[15px] lg:text-[17px] xl:text-[19px] font-medium">
-          <button className="transition-all duration-500 ease-in-out hover:text-white">
+        <div className="flex items-center justify-between space-x-7 text-white font-barlow md:text-[15px] lg:text-[17px] xl:text-[19px] font-normal">
+          <button className="transition-all duration-500 ease-in-out hover:font-semibold">
             <HashLink smooth to="#whyus">
               Why us
             </HashLink>
           </button>
-          <button className="transition-all duration-500 ease-in-out hover:text-white">
+          <button className="transition-all duration-500 ease-in-out hover:font-semibold">
             <HashLink smooth to="#waitlist">
               Waitlist
             </HashLink>
           </button>
-          <button className="transition-all duration-500 ease-in-out hover:text-white">
+          <button className="transition-all duration-500 ease-in-out hover:font-semibold">
             <HashLink smooth to="#contact">
               Contact us
             </HashLink>
@@ -230,17 +230,17 @@ const Navbar = () => {
                 className={`flex flex-col items-center justify-center space-y-7 text-white text-opacity-60 font-barlow text-[15px] font-medium pt-3`}
                 onClick={toggleNavbar}
               >
-                <button className="transition-all duration-500 ease-in-out hover:text-white">
+                <button className="transition-all duration-500 ease-in-out hover:font-semibold">
                   <HashLink smooth to="#whyus">
                     Why us
                   </HashLink>
                 </button>
-                <button className="transition-all duration-500 ease-in-out hover:text-white">
+                <button className="transition-all duration-500 ease-in-out hover:font-semibold">
                   <HashLink smooth to="#waitlist">
                     Waitlist
                   </HashLink>
                 </button>
-                <button className="transition-all duration-500 ease-in-out hover:text-white">
+                <button className="transition-all duration-500 ease-in-out hover:font-semibold">
                   <HashLink smooth to="#contact-M">
                     Contact us
                   </HashLink>
